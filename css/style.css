@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.container{
+    background: url('../img/castle_background.png') 0 0 no-repeat;
+    background-position: center;
+    height: 3840px;
+    width: 100%;
+    
+}
+#crazy_boy{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -80px;
+    margin: auto;
+    background: url('../img/bird.png') 0 0 no-repeat;
+    width: 155px;
+    height: 155px;
+    background-size: 620px 155px;
+    transition: top 1s ease;
+}
+
+.animate{
+    animation: move 1s steps(4) infinite;
+}
+
+@keyframes move{
+    from{
+        background-position-x: 0;
+    }
+    to{
+        background-position-x: -620px;
+    }
+}
+@keyframes jump{
+    from{
+        background-position-y: 0;
+    }
+    to{
+        background-position-y: -155px;
+    }
+}
